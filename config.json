@@ -1,0 +1,76 @@
+{
+  "bot": {
+    "token": "",
+    "clientId": ""
+  },
+  "server": {
+    "port": 3000,
+    "debug": false
+  },
+  "webhooks": {
+    "tebex": {
+      "enabled": false,
+      "allowedIPs": ["18.209.80.3", "54.87.231.232"],
+      "channelId": null,
+      "embedConfig": {
+        "color": "#00ff9d",
+        "title": "💰 Nueva Compra",
+        "description": null,
+        "footerText": "Adquiere rangos y mucho más en",
+        "footerUrl": "https://store.astralixmc.com/",
+        "thumbnailUrl": null,
+        "imageUrl": null,
+        "useMCSkin": true,
+        "fields": {
+          "username": true,
+          "price": true,
+          "packages": true,
+          "date": true,
+          "transactionId": false
+        },
+        "emojis": {
+          "title": "💰",
+          "currency": "💵",
+          "package": "📦",
+          "user": "👤",
+          "reaction": "✅"
+        }
+      }
+    }
+  },
+  "welcome": {
+    "enabled": false,
+    "channelId": null,
+    "roleId": null,
+    "message": {
+      "content": "¡Hola {user}! 🎉",
+      "embed": {
+        "enabled": true,
+        "color": "#7289da",
+        "title": "¡Bienvenido a {server}! 🌟",
+        "description": "Nos alegra tenerte en nuestra comunidad.",
+        "thumbnailUrl": "{avatar}",
+        "imageUrl": null,
+        "fields": [
+          {
+            "name": "📜 Antes de comenzar:",
+            "value": "Asegúrate de leer el canal de reglas para conocer las reglas y mantener un ambiente sano para todos.",
+            "inline": false
+          },
+          {
+            "name": "❓ ¿Dudas o problemas?",
+            "value": "Puedes abrir un ticket en cualquier momento y nuestro staff te ayudará encantado.",
+            "inline": false
+          },
+          {
+            "name": "✨ Disfruta tu estancia",
+            "value": "¡Prepárate para vivir la mejor experiencia!",
+            "inline": false
+          }
+        ],
+        "footerText": "Ahora somos {members} contigo!",
+        "footerIcon": "{serverIcon}"
+      }
+    }
+  }
+}
