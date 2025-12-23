@@ -1,0 +1,24 @@
+{
+  "name": "discord-tebex-bot",
+  "version": "2.0.0",
+  "description": "Bot de Discord con webhooks de Tebex y sistema de bienvenida configurable",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["discord", "bot", "tebex", "webhook", "minecraft"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "express": "^4.18.2",
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.9.0"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "bot": {
+    "token": "TU_TOKEN_DE_DISCORD_AQUI",
+    "clientId": "TU_CLIENT_ID_AQUI"
+  },
+  "server": {
+    "port": 3000,
+    "debug": false
+  },
+  "channels": {
+    "shop": "ID_CANAL_TIENDA",
+    "welcome": "ID_CANAL_BIENVENIDA"
+  },
+  "roles": {
+    "welcomeRole": "ID_ROL_INICIAL"
+  },
+  "webhooks": {
+    "tebex": {
+      "enabled": true,
+      "allowedIPs": ["18.209.80.3", "54.87.231.232"]
+    }
+  },
+  "embeds": {
+    "shop": {
+      "color": "#00ff9d",
+      "title": "💰 Nueva Compra",
+      "footer": "Adquiere rangos y mucho más en",
+      "footerUrl": "https://tienda.tuservidor.com",
+      "thumbnail": "https://i.ibb.co/example.png",
+      "image": "https://i.ibb.co/example-banner.png",
+      "emojis": {
+        "currency": "💵",
+        "package": "📦",
+        "reaction": "✅"
+      },
+      "useMCSkin": true
+    },
+    "welcome": {
+      "color": "#7289da",
+      "title": "¡Bienvenido a {serverName}! 🌟",
+      "description": "Nos alegra tenerte en nuestra comunidad.",
+      "thumbnail": "{userAvatar}",
+      "image": "https://i.ibb.co/welcome-banner.png",
+      "fields": [
+        {
+          "name": "📜 Antes de comenzar:",
+          "value": "Asegúrate de leer el canal {rulesChannel} para conocer las reglas y mantener un ambiente sano para todos."
+        },
+        {
+          "name": "❓ ¿Dudas o problemas?",
+          "value": "Puedes abrir un ticket en cualquier momento y nuestro staff te ayudará encantado."
+        },
+        {
+          "name": "✨ Disfruta tu estancia",
+          "value": "¡Disfruta tu estancia y prepárate para vivir la mejor experiencia!"
+        }
+      ],
+      "footer": "Ahora somos {memberCount} contigo!",
+      "rulesChannelId": "ID_CANAL_REGLAS"
+    }
+  },
+  "messages": {
+    "welcome": {
+      "content": "¡Hola {userMention}! 🎉"
+    }
+  }
+}
